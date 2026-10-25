@@ -1,5 +1,9 @@
 # 小花音乐助手（Xiaohua Music Assistant）
 
+[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/PolarPurple92/xiaohua-music-assistant)](https://github.com/PolarPurple92/xiaohua-music-assistant/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)](#)
+
 把扫描版乐谱 PDF 变成「点一下就能听」的交互读物，并给出和声/曲式讲解。
 
 面向的场景：读谱吃力、做和声题看不明白、想听一段四声部写作是什么效果。
@@ -10,6 +14,18 @@
 - **曲谱识别**：谱行 → MusicXML → MuseScore 排版 → MIDI 播放，识别结果与原谱并排对照
 - **术语查询**：右键查本页出现的术语，按时期与语境筛选，给出各教材的原书定义与页码
 - **整页讲解**：把这一页交给云端大模型讲一遍（需自备 API key）
+- **导出 MIDI**：右键把选中的谱行导出为 MIDI，文件名附带书名、页码、位置与时间戳
+
+## 看一眼
+
+输入可以是这样一页扫描谱（随包的公版样本，巴赫《马太受难曲》众赞歌）：
+
+![输入示例](samples/sample-score.jpg)
+
+双击其中任意一行 → 程序识别出音符 → 播放，并把识别结果与原谱上下并排对照。
+
+> 界面截图见 `docs/screenshots/`（待补充：阅读页、讲解页、术语页）。
+> 如果你愿意帮忙截图，欢迎提 PR —— 放在该目录下，文件名用 `read.png` / `explain.png` / `terms.png`。
 
 ## 依赖
 
