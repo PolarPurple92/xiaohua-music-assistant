@@ -1,0 +1,51 @@
+# 运行时/第三方二进制：不进仓库，发布时随 zip 提供
+python/
+lib/
+vendor/
+homr07/
+musescore/
+musescore_x/
+
+# 构建产物
+dist/
+build/
+*.zip
+*.7z
+
+# 用户数据与缓存
+data/pdf_cache/
+data/xml_outputs/
+data/midi_outputs/
+data/screenshots/
+data/homr_work/
+data/preprocessed/
+data/staging/
+data/briefs/
+data/temp_audiveris/
+data/soundfonts/
+data/book_folders.json
+data/books.json
+data/book_domains.json
+data/glossary_*.json
+data/llm.json
+data/config.json
+data/*.log
+books/*.pdf
+
+# 术语库/书库不进仓库（版权原因），只保留示例模板
+!data/llm.example.json
+!data/tall_page.mss
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
